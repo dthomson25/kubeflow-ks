@@ -17,14 +17,14 @@
     ambassador: {
       ambassadorImage: 'quay.io/datawire/ambassador:0.37.0',
       ambassadorServiceType: 'ClusterIP',
-      cloud: 'null',
+      cloud: 'minikube',
       name: 'ambassador',
       statsdImage: 'quay.io/datawire/statsd:0.37.0',
       statsdSinkImage: 'prom/statsd-exporter:v0.6.0',
     },
     jupyterhub: {
       accessLocalFs: 'false',
-      cloud: 'null',
+      cloud: 'minikube',
       disks: 'null',
       gcpSecretName: 'user-gcp-sa',
       image: 'gcr.io/kubeflow/jupyterhub-k8s:v20180531-3bb991b1',
@@ -75,7 +75,7 @@
     spartakus: {
       name: 'spartakus',
       reportUsage: 'true',
-      usageId: '873782470',
+      usageId: '824418767',
     },
   },
 }
