@@ -6,7 +6,7 @@
 // @optionalParam namespace string null Namespace to use for the components. It is automatically inherited from the environment if not set.
 // @param acmeEmail string The Lets Encrypt account email address
 // @optionalParam acmeUrl string https://acme-v02.api.letsencrypt.org/directory The ACME server URL, set to https://acme-staging-v02.api.letsencrypt.org/directory for staging API.
-// @optionalParam certManagerImage string quay.io/jetstack/cert-manager-controller:v0.4.0 certManagerImage
+// @optionalParam certManagerImage string registry.aliyuncs.com/jetstack/cert-manager-controller:v0.4.0 certManagerImage
 
 local certManager = import "kubeflow/core/cert-manager.libsonnet";
 local instance = certManager.new(env, params);
